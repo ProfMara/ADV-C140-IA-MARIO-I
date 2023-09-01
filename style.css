@@ -1,0 +1,31 @@
+.heading{
+  /*OCUPE TODA A LARGURA DO SITE*/
+  width:100%;
+  margin:0;
+  text-align: left;
+}
+
+.heading h3{
+  display: inline;
+}
+.heading button{
+  /*FLUTUAR PARA A DIREITA*/
+  float:right;
+  border: 1px solid white;
+}
+
+.bigImg{
+  /*AJUSTAR A LARGURA DA IMAGEM*/
+  width: 100%;
+
+}
+
+#jogar,#status{
+  font-size: 22px;
+}
+
+.ii{
+  display: inline-block;
+  width:45%;
+}
+

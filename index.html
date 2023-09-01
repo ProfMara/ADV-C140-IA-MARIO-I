@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="p5.play.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="sweetalert.css">
+  
+  <!--LINK DOS SCRIPTS-->
+  <script src="./scripts/characters_environment.js"></script>
+  <script src="./scripts/sprites.js"></script>
+  <!--LINK DO ML5-->
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+
+  <!--LINK DO BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+  <!--LINK DO STYLE.CSS-->
+  <link rel="stylesheet" href="style.css"/>
+
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <body background="./imgs/assets/background.jpg">
+    <center>
+        <div class="btn btn-primary heading">
+            <h3>IA MARIO</h3>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Ver Instruções
+            </button>
+        </div>
+        
+        <img src="./imgs/assets/mario.jpg" class="bigImg">
+        <br> <br>
+        <button class="btn btn-success" onclick="startGame()" id="jogar">JOGAR</button>
+        <br> <br>
+        <h3 class="btn btn-warning" id="status"></h3>
+        <br>
+        <div id="canvas"></div>
+         
+
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <!--Conteúdo do modal 😄😄😄😕-->
+                <div class="modal-content">
+                    <!--TOPO 🤯-->
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" >&times;</button>
+                        <h4>Instruções</h4>
+                    </div>
+                    <!--CORPO 💃🏻-->
+                    <div class="modal-body">
+                        <img src="./imgs/assets/jump.png" class="img-responsive ii">
+                        <img src="./imgs/assets/left.png" class="img-responsive ii">
+                        <img src="./imgs/assets/right.png" class="img-responsive ii">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+ 
+  <script src="sketch.js"></script>
+
+</body></html>
